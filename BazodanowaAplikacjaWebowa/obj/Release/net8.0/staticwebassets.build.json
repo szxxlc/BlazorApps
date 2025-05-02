@@ -1,0 +1,640 @@
+{
+  "Version": 1,
+  "Hash": "AwXx9OcK6sF2dQK09ZIwtu0rAuXdY3sCLIqanhz7XyQ=",
+  "Source": "BazodanowaAplikacjaWebowa",
+  "BasePath": "_content/BazodanowaAplikacjaWebowa",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "BazodanowaAplikacjaWebowa\\wwwroot",
+      "Source": "BazodanowaAplikacjaWebowa",
+      "ContentRoot": "C:\\Users\\pauli\\Desktop\\szkolne\\sem_6\\platformy_programistyczne dotnet_i_java\\lab4\\BazodanowaAplikacjaWebowa\\wwwroot\\",
+      "BasePath": "_content/BazodanowaAplikacjaWebowa",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\pauli\\Desktop\\szkolne\\sem_6\\platformy_programistyczne dotnet_i_java\\lab4\\BazodanowaAplikacjaWebowa\\obj\\Release\\net8.0\\scopedcss\\bundle\\BazodanowaAplikacjaWebowa.styles.css",
+      "SourceId": "BazodanowaAplikacjaWebowa",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\pauli\\Desktop\\szkolne\\sem_6\\platformy_programistyczne dotnet_i_java\\lab4\\BazodanowaAplikacjaWebowa\\obj\\Release\\net8.0\\scopedcss\\bundle\\",
+      "BasePath": "_content/BazodanowaAplikacjaWebowa",
+      "RelativePath": "BazodanowaAplikacjaWebowa#[.{fingerprint}]?.styles.css",
+      "AssetKind": "All",
+      "AssetMode": "CurrentProject",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "ScopedCss",
+      "AssetTraitValue": "ApplicationBundle",
+      "Fingerprint": "uqqe3iyq12",
+      "Integrity": "5olCdp+BJJdvsAZEj9aeYz1xKmrpcHxvPiFR1pxtEY8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\pauli\\Desktop\\szkolne\\sem_6\\platformy_programistyczne dotnet_i_java\\lab4\\BazodanowaAplikacjaWebowa\\obj\\Release\\net8.0\\scopedcss\\bundle\\BazodanowaAplikacjaWebowa.styles.css"
+    },
+    {
+      "Identity": "C:\\Users\\pauli\\Desktop\\szkolne\\sem_6\\platformy_programistyczne dotnet_i_java\\lab4\\BazodanowaAplikacjaWebowa\\obj\\Release\\net8.0\\scopedcss\\projectbundle\\BazodanowaAplikacjaWebowa.bundle.scp.css",
+      "SourceId": "BazodanowaAplikacjaWebowa",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\pauli\\Desktop\\szkolne\\sem_6\\platformy_programistyczne dotnet_i_java\\lab4\\BazodanowaAplikacjaWebowa\\obj\\Release\\net8.0\\scopedcss\\projectbundle\\",
+      "BasePath": "_content/BazodanowaAplikacjaWebowa",
+      "RelativePath": "BazodanowaAplikacjaWebowa#[.{fingerprint}]!.bundle.scp.css",
+      "AssetKind": "All",
+      "AssetMode": "Reference",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "ScopedCss",
+      "AssetTraitValue": "ProjectBundle",
+      "Fingerprint": "uqqe3iyq12",
+      "Integrity": "5olCdp+BJJdvsAZEj9aeYz1xKmrpcHxvPiFR1pxtEY8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\pauli\\Desktop\\szkolne\\sem_6\\platformy_programistyczne dotnet_i_java\\lab4\\BazodanowaAplikacjaWebowa\\obj\\Release\\net8.0\\scopedcss\\projectbundle\\BazodanowaAplikacjaWebowa.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\pauli\\Desktop\\szkolne\\sem_6\\platformy_programistyczne dotnet_i_java\\lab4\\BazodanowaAplikacjaWebowa\\wwwroot\\app.css",
+      "SourceId": "BazodanowaAplikacjaWebowa",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\pauli\\Desktop\\szkolne\\sem_6\\platformy_programistyczne dotnet_i_java\\lab4\\BazodanowaAplikacjaWebowa\\wwwroot\\",
+      "BasePath": "_content/BazodanowaAplikacjaWebowa",
+      "RelativePath": "app#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "da95v2qkru",
+      "Integrity": "u9qEka1auR7E3rd3/8/j8hkQdSOYj9bRJ4nYiFDR1sE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\app.css"
+    },
+    {
+      "Identity": "C:\\Users\\pauli\\Desktop\\szkolne\\sem_6\\platformy_programistyczne dotnet_i_java\\lab4\\BazodanowaAplikacjaWebowa\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "SourceId": "BazodanowaAplikacjaWebowa",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\pauli\\Desktop\\szkolne\\sem_6\\platformy_programistyczne dotnet_i_java\\lab4\\BazodanowaAplikacjaWebowa\\wwwroot\\",
+      "BasePath": "_content/BazodanowaAplikacjaWebowa",
+      "RelativePath": "bootstrap/bootstrap.min#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "bpk8xqwxhs",
+      "Integrity": "z8OR40MowJ8GgK6P89Y+hiJK5+cclzFHzLhFQLL92bg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Identity": "C:\\Users\\pauli\\Desktop\\szkolne\\sem_6\\platformy_programistyczne dotnet_i_java\\lab4\\BazodanowaAplikacjaWebowa\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "SourceId": "BazodanowaAplikacjaWebowa",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\pauli\\Desktop\\szkolne\\sem_6\\platformy_programistyczne dotnet_i_java\\lab4\\BazodanowaAplikacjaWebowa\\wwwroot\\",
+      "BasePath": "_content/BazodanowaAplikacjaWebowa",
+      "RelativePath": "bootstrap/bootstrap.min.css#[.{fingerprint}]?.map",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "8inm30yfxf",
+      "Integrity": "gBwg2tmA0Ci2u54gMF1jNCVku6vznarkLS6D76htNNQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Identity": "C:\\Users\\pauli\\Desktop\\szkolne\\sem_6\\platformy_programistyczne dotnet_i_java\\lab4\\BazodanowaAplikacjaWebowa\\wwwroot\\favicon.png",
+      "SourceId": "BazodanowaAplikacjaWebowa",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\pauli\\Desktop\\szkolne\\sem_6\\platformy_programistyczne dotnet_i_java\\lab4\\BazodanowaAplikacjaWebowa\\wwwroot\\",
+      "BasePath": "_content/BazodanowaAplikacjaWebowa",
+      "RelativePath": "favicon#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ifv42okdf2",
+      "Integrity": "4mWsDy3aHl36ZbGt8zByK7Pvd4kRUoNgTYzRnwmPHwg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\favicon.png"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "app.css",
+      "AssetFile": "C:\\Users\\pauli\\Desktop\\szkolne\\sem_6\\platformy_programistyczne dotnet_i_java\\lab4\\BazodanowaAplikacjaWebowa\\wwwroot\\app.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2591"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"u9qEka1auR7E3rd3/8/j8hkQdSOYj9bRJ4nYiFDR1sE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 28 Apr 2025 09:18:33 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-u9qEka1auR7E3rd3/8/j8hkQdSOYj9bRJ4nYiFDR1sE="
+        }
+      ]
+    },
+    {
+      "Route": "app.da95v2qkru.css",
+      "AssetFile": "C:\\Users\\pauli\\Desktop\\szkolne\\sem_6\\platformy_programistyczne dotnet_i_java\\lab4\\BazodanowaAplikacjaWebowa\\wwwroot\\app.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2591"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"u9qEka1auR7E3rd3/8/j8hkQdSOYj9bRJ4nYiFDR1sE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 28 Apr 2025 09:18:33 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "da95v2qkru"
+        },
+        {
+          "Name": "label",
+          "Value": "app.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-u9qEka1auR7E3rd3/8/j8hkQdSOYj9bRJ4nYiFDR1sE="
+        }
+      ]
+    },
+    {
+      "Route": "BazodanowaAplikacjaWebowa.bundle.scp.css",
+      "AssetFile": "C:\\Users\\pauli\\Desktop\\szkolne\\sem_6\\platformy_programistyczne dotnet_i_java\\lab4\\BazodanowaAplikacjaWebowa\\obj\\Release\\net8.0\\scopedcss\\projectbundle\\BazodanowaAplikacjaWebowa.bundle.scp.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8221"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"5olCdp+BJJdvsAZEj9aeYz1xKmrpcHxvPiFR1pxtEY8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 30 Apr 2025 15:09:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-5olCdp+BJJdvsAZEj9aeYz1xKmrpcHxvPiFR1pxtEY8="
+        }
+      ]
+    },
+    {
+      "Route": "BazodanowaAplikacjaWebowa.styles.css",
+      "AssetFile": "C:\\Users\\pauli\\Desktop\\szkolne\\sem_6\\platformy_programistyczne dotnet_i_java\\lab4\\BazodanowaAplikacjaWebowa\\obj\\Release\\net8.0\\scopedcss\\bundle\\BazodanowaAplikacjaWebowa.styles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8221"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"5olCdp+BJJdvsAZEj9aeYz1xKmrpcHxvPiFR1pxtEY8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 30 Apr 2025 15:09:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-5olCdp+BJJdvsAZEj9aeYz1xKmrpcHxvPiFR1pxtEY8="
+        }
+      ]
+    },
+    {
+      "Route": "BazodanowaAplikacjaWebowa.uqqe3iyq12.bundle.scp.css",
+      "AssetFile": "C:\\Users\\pauli\\Desktop\\szkolne\\sem_6\\platformy_programistyczne dotnet_i_java\\lab4\\BazodanowaAplikacjaWebowa\\obj\\Release\\net8.0\\scopedcss\\projectbundle\\BazodanowaAplikacjaWebowa.bundle.scp.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8221"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"5olCdp+BJJdvsAZEj9aeYz1xKmrpcHxvPiFR1pxtEY8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 30 Apr 2025 15:09:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "uqqe3iyq12"
+        },
+        {
+          "Name": "label",
+          "Value": "BazodanowaAplikacjaWebowa.bundle.scp.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-5olCdp+BJJdvsAZEj9aeYz1xKmrpcHxvPiFR1pxtEY8="
+        }
+      ]
+    },
+    {
+      "Route": "BazodanowaAplikacjaWebowa.uqqe3iyq12.styles.css",
+      "AssetFile": "C:\\Users\\pauli\\Desktop\\szkolne\\sem_6\\platformy_programistyczne dotnet_i_java\\lab4\\BazodanowaAplikacjaWebowa\\obj\\Release\\net8.0\\scopedcss\\bundle\\BazodanowaAplikacjaWebowa.styles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8221"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"5olCdp+BJJdvsAZEj9aeYz1xKmrpcHxvPiFR1pxtEY8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 30 Apr 2025 15:09:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "uqqe3iyq12"
+        },
+        {
+          "Name": "label",
+          "Value": "BazodanowaAplikacjaWebowa.styles.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-5olCdp+BJJdvsAZEj9aeYz1xKmrpcHxvPiFR1pxtEY8="
+        }
+      ]
+    },
+    {
+      "Route": "bootstrap/bootstrap.min.bpk8xqwxhs.css",
+      "AssetFile": "C:\\Users\\pauli\\Desktop\\szkolne\\sem_6\\platformy_programistyczne dotnet_i_java\\lab4\\BazodanowaAplikacjaWebowa\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "162720"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"z8OR40MowJ8GgK6P89Y+hiJK5+cclzFHzLhFQLL92bg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 28 Apr 2025 09:18:33 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "bpk8xqwxhs"
+        },
+        {
+          "Name": "label",
+          "Value": "bootstrap/bootstrap.min.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-z8OR40MowJ8GgK6P89Y+hiJK5+cclzFHzLhFQLL92bg="
+        }
+      ]
+    },
+    {
+      "Route": "bootstrap/bootstrap.min.css",
+      "AssetFile": "C:\\Users\\pauli\\Desktop\\szkolne\\sem_6\\platformy_programistyczne dotnet_i_java\\lab4\\BazodanowaAplikacjaWebowa\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "162720"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"z8OR40MowJ8GgK6P89Y+hiJK5+cclzFHzLhFQLL92bg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 28 Apr 2025 09:18:33 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-z8OR40MowJ8GgK6P89Y+hiJK5+cclzFHzLhFQLL92bg="
+        }
+      ]
+    },
+    {
+      "Route": "bootstrap/bootstrap.min.css.8inm30yfxf.map",
+      "AssetFile": "C:\\Users\\pauli\\Desktop\\szkolne\\sem_6\\platformy_programistyczne dotnet_i_java\\lab4\\BazodanowaAplikacjaWebowa\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "449111"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gBwg2tmA0Ci2u54gMF1jNCVku6vznarkLS6D76htNNQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 28 Apr 2025 09:18:33 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8inm30yfxf"
+        },
+        {
+          "Name": "label",
+          "Value": "bootstrap/bootstrap.min.css.map"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-gBwg2tmA0Ci2u54gMF1jNCVku6vznarkLS6D76htNNQ="
+        }
+      ]
+    },
+    {
+      "Route": "bootstrap/bootstrap.min.css.map",
+      "AssetFile": "C:\\Users\\pauli\\Desktop\\szkolne\\sem_6\\platformy_programistyczne dotnet_i_java\\lab4\\BazodanowaAplikacjaWebowa\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "449111"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gBwg2tmA0Ci2u54gMF1jNCVku6vznarkLS6D76htNNQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 28 Apr 2025 09:18:33 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-gBwg2tmA0Ci2u54gMF1jNCVku6vznarkLS6D76htNNQ="
+        }
+      ]
+    },
+    {
+      "Route": "favicon.ifv42okdf2.png",
+      "AssetFile": "C:\\Users\\pauli\\Desktop\\szkolne\\sem_6\\platformy_programistyczne dotnet_i_java\\lab4\\BazodanowaAplikacjaWebowa\\wwwroot\\favicon.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1148"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"4mWsDy3aHl36ZbGt8zByK7Pvd4kRUoNgTYzRnwmPHwg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 28 Apr 2025 09:18:33 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ifv42okdf2"
+        },
+        {
+          "Name": "label",
+          "Value": "favicon.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-4mWsDy3aHl36ZbGt8zByK7Pvd4kRUoNgTYzRnwmPHwg="
+        }
+      ]
+    },
+    {
+      "Route": "favicon.png",
+      "AssetFile": "C:\\Users\\pauli\\Desktop\\szkolne\\sem_6\\platformy_programistyczne dotnet_i_java\\lab4\\BazodanowaAplikacjaWebowa\\wwwroot\\favicon.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1148"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"4mWsDy3aHl36ZbGt8zByK7Pvd4kRUoNgTYzRnwmPHwg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 28 Apr 2025 09:18:33 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-4mWsDy3aHl36ZbGt8zByK7Pvd4kRUoNgTYzRnwmPHwg="
+        }
+      ]
+    }
+  ]
+}

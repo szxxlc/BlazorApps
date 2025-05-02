@@ -1,0 +1,140 @@
+﻿@page "/add-product"
+@using Microsoft.AspNetCore.Authorization
+@using Microsoft.EntityFrameworkCore
+@using BazodanowaAplikacjaWebowa.Data
+@inject ApplicationDbContext DbContext
+@rendermode InteractiveServer
+@attribute [Authorize]
+
+<h1>Add New Rating</h1>
+
+<EditForm Model="@newProduct" OnValidSubmit="SubmitProduct">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+
+    <div class="mb-3">
+        <label class="form-label">Title</label>
+        <InputText class="form-control" @bind-Value="newProduct.Title" />
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Category</label>
+        <InputSelect class="form-select" @bind-Value="newProduct.Category">
+            <option disabled selected value="NotSelected">-- Choose category --</option>
+            @foreach (var category in Enum.GetValues<CategoryType>().Where(c => c != CategoryType.NotSelected))
+            {
+                <option value="@category">@category</option>
+            }
+        </InputSelect>
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Release Year</label>
+        <InputNumber class="form-control" @bind-Value="newProduct.ReleaseYear" Min="1900" Max="@DateTime.Now.Year" />
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Rating (1.0 - 10.0)</label>
+        <InputNumber class="form-control" @bind-Value="newRating" Step="0.1" Min="1" Max="10" />
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Description (optional)</label>
+        <InputTextArea class="form-control" @bind-Value="newDescription" />
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Image URL (optional)</label>
+        <InputText class="form-control" @bind-Value="newImageUrl" />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Add Rating</button>
+</EditForm>
+
+@if (successMessage != null)
+{
+    <div class="alert alert-success mt-3">@successMessage</div>
+}
+
+@code {
+    private Product newProduct = new();
+    private float newRating;
+    private string? newDescription;
+    private string? newImageUrl;
+    private string? successMessage;
+
+    private async Task SubmitProduct()
+    {
+        try
+        {
+            var existing = await DbContext.Products.FirstOrDefaultAsync(p =>
+                p.Title == newProduct.Title &&
+                p.Category == newProduct.Category &&
+                p.ReleaseYear == newProduct.ReleaseYear);
+
+            if (existing != null)
+            {
+                var ratings = DeserializeRatings(existing.RatingsSerialized);
+                ratings.Add(newRating);
+                existing.RatingsSerialized = SerializeRatings(ratings);
+
+                var descriptions = DeserializeDescriptions(existing.DescriptionsSerialized);
+                descriptions.Add(string.IsNullOrWhiteSpace(newDescription) ? "" : newDescription);
+                existing.DescriptionsSerialized = SerializeDescriptions(descriptions);
+
+                if (!string.IsNullOrWhiteSpace(newImageUrl))
+                {
+                    existing.ImageUrl = newImageUrl;
+                }
+
+                DbContext.Products.Update(existing);
+            }
+            else
+            {
+                var product = new Product
+                    {
+                        Title = newProduct.Title,
+                        Category = newProduct.Category,
+                        ReleaseYear = newProduct.ReleaseYear,
+                        RatingsSerialized = newRating.ToString(),
+                        DescriptionsSerialized = string.IsNullOrWhiteSpace(newDescription) ? "" : newDescription,
+                        ImageUrl = string.IsNullOrWhiteSpace(newImageUrl) ? null : newImageUrl
+                    };
+
+                DbContext.Products.Add(product);
+            }
+
+            await DbContext.SaveChangesAsync();
+
+            successMessage = "The rating has been successfully added!";
+            newProduct = new Product();
+            newRating = 0;
+            newDescription = "";
+            newImageUrl = "";
+        }
+        catch (Exception ex)
+        {
+            successMessage = "ERROR: " + ex.Message;
+        }
+    }
+
+    private List<float> DeserializeRatings(string data)
+    {
+        return data.Split(';').Select(float.Parse).ToList();
+    }
+
+    private string SerializeRatings(List<float> ratings)
+    {
+        return string.Join(';', ratings);
+    }
+
+    private List<string> DeserializeDescriptions(string data)
+    {
+        return data.Split(';').ToList();
+    }
+
+    private string SerializeDescriptions(List<string> descriptions)
+    {
+        return string.Join(';', descriptions);
+    }
+}

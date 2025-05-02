@@ -1,0 +1,45 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\pauli\\Desktop\\szkolne\\sem_6\\platformy_programistyczne dotnet_i_java\\lab4\\BazodanowaAplikacjaWebowa\\obj\\Release\\net8.0\\scopedcss\\projectbundle\\BazodanowaAplikacjaWebowa.bundle.scp.css",
+      "PackagePath": "staticwebassets\\BazodanowaAplikacjaWebowa.uqqe3iyq12.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\pauli\\Desktop\\szkolne\\sem_6\\platformy_programistyczne dotnet_i_java\\lab4\\BazodanowaAplikacjaWebowa\\wwwroot\\app.css",
+      "PackagePath": "staticwebassets\\app.css"
+    },
+    {
+      "Id": "C:\\Users\\pauli\\Desktop\\szkolne\\sem_6\\platformy_programistyczne dotnet_i_java\\lab4\\BazodanowaAplikacjaWebowa\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\pauli\\Desktop\\szkolne\\sem_6\\platformy_programistyczne dotnet_i_java\\lab4\\BazodanowaAplikacjaWebowa\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\pauli\\Desktop\\szkolne\\sem_6\\platformy_programistyczne dotnet_i_java\\lab4\\BazodanowaAplikacjaWebowa\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.BazodanowaAplikacjaWebowa.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.BazodanowaAplikacjaWebowa.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.build.BazodanowaAplikacjaWebowa.props",
+      "PackagePath": "build\\BazodanowaAplikacjaWebowa.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.BazodanowaAplikacjaWebowa.props",
+      "PackagePath": "buildMultiTargeting\\BazodanowaAplikacjaWebowa.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.buildTransitive.BazodanowaAplikacjaWebowa.props",
+      "PackagePath": "buildTransitive\\BazodanowaAplikacjaWebowa.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

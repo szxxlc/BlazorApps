@@ -1,0 +1,195 @@
+﻿@page "/products"
+@using Microsoft.EntityFrameworkCore
+@using BazodanowaAplikacjaWebowa.Data
+@inject ApplicationDbContext DbContext
+@rendermode InteractiveServer
+
+<h1>Products</h1>
+
+@if (products == null)
+{
+    <p><em>Loading...</em></p>
+}
+else if (products.Count == 0)
+{
+    <p>No products found.</p>
+}
+else
+{
+    <div class="row mb-3">
+        <div class="col-md-4">
+            <label>Filter by Category:</label>
+            <select class="form-select" @bind="selectedCategory">
+                <option value="">-- All --</option>
+                @foreach (var category in Enum.GetValues<CategoryType>().Where(c => c != CategoryType.NotSelected))
+                {
+                    <option value="@category">@category</option>
+                }
+            </select>
+        </div>
+
+        <div class="col-md-4">
+            <label>Minimum Average Rating:</label>
+            <select class="form-select" @bind="minAverageRating">
+                <option value="0">-- All --</option>
+                <option value="6">6.0+</option>
+                <option value="7">7.0+</option>
+                <option value="8">8.0+</option>
+                <option value="9">9.0+</option>
+            </select>
+        </div>
+
+        <div class="col-md-4">
+            <label>Search Title:</label>
+            <InputText class="form-control" @bind-Value="searchTitle" />
+        </div>
+    </div>
+
+    <div class="row mb-3">
+        <div class="col-md-6">
+            <label>Sort by:</label>
+            <select class="form-select" @bind="sortOption">
+                <option value="TitleAsc">Title (A-Z)</option>
+                <option value="TitleDesc">Title (Z-A)</option>
+                <option value="RatingAsc">Average Rating (Low to High)</option>
+                <option value="RatingDesc">Average Rating (High to Low)</option>
+                <option value="YearAsc">Release Year (Oldest First)</option>
+                <option value="YearDesc">Release Year (Newest First)</option>
+            </select>
+        </div>
+
+        <div class="col-md-6 d-flex align-items-end">
+            <button class="btn btn-secondary w-100" @onclick="ResetFilters">Reset Filters</button>
+        </div>
+    </div>
+
+    <p><strong>Showing @GetFilteredAndSortedProducts().Count() result(s)</strong></p>
+
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Category</th>
+                <th>Release Year</th>
+                <th>Average Rating</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var product in GetFilteredAndSortedProducts())
+            {
+                var isExpanded = expandedProduct == product;
+                <tr @onclick="() => ToggleExpanded(product)" style="cursor: pointer;">
+                    <td>@product.Title</td>
+                    <td>@product.Category</td>
+                    <td>@product.ReleaseYear</td>
+                    <td>@(GetAverageRating(product.RatingsSerialized)?.ToString("0.00") ?? "-")</td>
+                    <td>@(isExpanded ? "▼" : "►")</td>
+                </tr>
+
+                @if (isExpanded)
+                {
+                    var ratings = DeserializeRatings(product.RatingsSerialized);
+                    var descriptions = DeserializeDescriptions(product.DescriptionsSerialized);
+
+                    <tr>
+                        <td colspan="5">
+                            <img src="@(string.IsNullOrWhiteSpace(product.ImageUrl)
+                                ? "https://static.vecteezy.com/system/resources/previews/022/014/063/original/missing-picture-page-for-website-design-or-mobile-app-design-no-image-available-icon-vector.jpg"
+                                : product.ImageUrl)"
+                                 alt="Product image" class="img-thumbnail mb-2" style="max-width: 200px;" />
+
+                            <div class="mt-2">
+                                <strong>All Ratings:</strong>
+                                <ul>
+                                    @for (int i = 0; i < ratings.Count; i++)
+                                    {
+                                        var rating = ratings[i];
+                                        var description = i < descriptions.Count ? descriptions[i] : string.Empty;
+                                        <li><strong>@rating/10</strong> @(string.IsNullOrWhiteSpace(description) ? "(no description)" : description)</li>
+                                    }
+                                </ul>
+                            </div>
+                        </td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    private List<Product>? products;
+    private Product? expandedProduct;
+    private string selectedCategory = "";
+    private string sortOption = "TitleAsc";
+    private string searchTitle = "";
+    private float minAverageRating = 0;
+
+    protected override async Task OnInitializedAsync()
+    {
+        products = await DbContext.Products.ToListAsync();
+    }
+
+    private void ToggleExpanded(Product product)
+    {
+        expandedProduct = expandedProduct == product ? null : product;
+    }
+
+    private IEnumerable<Product> GetFilteredAndSortedProducts()
+    {
+        var query = products?.AsEnumerable() ?? Enumerable.Empty<Product>();
+
+        if (!string.IsNullOrWhiteSpace(selectedCategory))
+        {
+            query = query.Where(p => p.Category.ToString() == selectedCategory);
+        }
+
+        if (!string.IsNullOrWhiteSpace(searchTitle))
+        {
+            query = query.Where(p => p.Title.Contains(searchTitle, StringComparison.OrdinalIgnoreCase));
+        }
+
+        if (minAverageRating > 0)
+        {
+            query = query.Where(p => (GetAverageRating(p.RatingsSerialized) ?? 0) >= minAverageRating);
+        }
+
+        query = sortOption switch
+        {
+            "TitleAsc" => query.OrderBy(p => p.Title),
+            "TitleDesc" => query.OrderByDescending(p => p.Title),
+            "RatingAsc" => query.OrderBy(p => GetAverageRating(p.RatingsSerialized) ?? 0),
+            "RatingDesc" => query.OrderByDescending(p => GetAverageRating(p.RatingsSerialized) ?? 0),
+            "YearAsc" => query.OrderBy(p => p.ReleaseYear),
+            "YearDesc" => query.OrderByDescending(p => p.ReleaseYear),
+            _ => query
+        };
+
+        return query;
+    }
+
+    private void ResetFilters()
+    {
+        selectedCategory = "";
+        sortOption = "TitleAsc";
+        searchTitle = "";
+        minAverageRating = 0;
+    }
+
+    private float? GetAverageRating(string serialized)
+    {
+        var ratings = DeserializeRatings(serialized);
+        return ratings.Count > 0 ? ratings.Average() : null;
+    }
+
+    private List<float> DeserializeRatings(string data)
+    {
+        return data.Split(';').Select(float.Parse).ToList();
+    }
+
+    private List<string> DeserializeDescriptions(string data)
+    {
+        return data.Split(';').ToList();
+    }
+}

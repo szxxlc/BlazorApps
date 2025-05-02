@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Ten plik jest wykorzystywany przez proces publikowania/pakowania projektu internetowego. Możesz dostosować zachowanie tego procesu
+ poprzez edycję tego pliku MSBuild. Aby dowiedzieć się więcej o tym działaniu, odwiedź stronę https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project>
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <History>True|2025-04-30T15:11:38.6308493Z||;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="DefaultConnection">
+      <Value>Server=tcp:bazodanowaaplikacjawebowadbserver.database.windows.net%3bAuthentication=Active Directory Default%3bDatabase=BazodanowaAplikacjaWebowa_db%3b</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+  <ItemGroup>
+    <EFMigrations Include="BazodanowaAplikacjaWebowa.Data.ApplicationDbContext">
+      <Value>Server=tcp:bazodanowaaplikacjawebowadbserver.database.windows.net,1433%3bInitial Catalog=BazodanowaAplikacjaWebowa_db%3bUser Id=dbadmin%3bPassword=DomekEdziu06!%3b</Value>
+    </EFMigrations>
+  </ItemGroup>
+</Project>

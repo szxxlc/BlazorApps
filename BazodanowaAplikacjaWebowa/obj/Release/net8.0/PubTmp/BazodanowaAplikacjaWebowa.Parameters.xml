@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="BazodanowaAplikacjaWebowa" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\pauli\\Desktop\\szkolne\\sem_6\\platformy_programistyczne\ dotnet_i_java\\lab4\\BazodanowaAplikacjaWebowa\\obj\\Release\\net8\.0\\PubTmp\\Out\\$" />
+  </parameter>
+  <parameter name="BazodanowaAplikacjaWebowa.Data.ApplicationDbContext" description="" value="Server=tcp:bazodanowaaplikacjawebowadbserver.database.windows.net,1433;Initial Catalog=BazodanowaAplikacjaWebowa_db;User Id=dbadmin;Password=DomekEdziu06!;" tags="dbfullsql">
+    <parameterEntry kind="ProviderPath" scope="dbfullsql" match="^C:\\Users\\pauli\\Desktop\\szkolne\\sem_6\\platformy_programistyczne\ dotnet_i_java\\lab4\\BazodanowaAplikacjaWebowa\\obj\\Release\\net8\.0\\PubTmp\\EFSQLScripts\\BazodanowaAplikacjaWebowa\.Data\.ApplicationDbContext\.sql$" />
+  </parameter>
+</parameters>
